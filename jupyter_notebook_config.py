@@ -1,5 +1,5 @@
 import os
-from jupters3 import JupyterS3, JupyterS3SecretAccessKeyAuthentication
+from jupyters3 import JupyterS3, JupyterS3SecretAccessKeyAuthentication
 
 CELLAR_ADDON_HOST = os.getenv("CELLAR_ADDON_HOST")
 CELLAR_ADDON_KEY_ID = os.getenv("CELLAR_ADDON_KEY_ID")
