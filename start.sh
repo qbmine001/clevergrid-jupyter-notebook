@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-jupyter notebook --port 9999
+jupyter notebook --port 8080
