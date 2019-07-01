@@ -34,7 +34,7 @@ c.NotebookApp.contents_manager_class = S3ContentsManager
 c.S3ContentsManager.access_key_id = "89Y1283CC7J7Z596I92C"
 c.S3ContentsManager.secret_access_key = "8zTzWvbfJMCkhH9pgJo2gOmgxCwEu9N2LQwBhrUa"
 c.S3ContentsManager.bucket = "bucket-notebook"
-.S3ContentsManager.endpoint_url = "cellar-c2.services.clever-cloud.com"
+c.S3ContentsManager.endpoint_url = "cellar-c2.services.clever-cloud.com"
 
 # Optional settings:
 c.S3ContentsManager.prefix = ""
