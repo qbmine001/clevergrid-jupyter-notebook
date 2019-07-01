@@ -1,6 +1,2 @@
 jupyter
-jupyters3
-s3contents
-dask
-toolz
 bookstore
