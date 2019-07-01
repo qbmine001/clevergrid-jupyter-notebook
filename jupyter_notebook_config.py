@@ -4,7 +4,7 @@ from s3contents import S3ContentsManager
 CELLAR_ADDON_KEY_ID = os.getenv("CELLAR_ADDON_KEY_ID")
 CELLAR_ADDON_KEY_SECRET = os.getenv("CELLAR_ADDON_KEY_SECRET")
 BUCKET_NOTEBOOK_NAME = os.getenv("BUCKET_NOTEBOOK_NAME")
-CELLAR_ADDON_HOST = os.getenv("$CELLAR_ADDON_HOST")
+CELLAR_ADDON_HOST = os.getenv("CELLAR_ADDON_HOST")
 
 c = get_config()
 
