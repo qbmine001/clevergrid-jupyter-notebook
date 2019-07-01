@@ -1,3 +1,5 @@
 s3contents
 dask
 toolz
+boto==2.49.0
+filechunkio==1.8
