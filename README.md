@@ -54,3 +54,7 @@ Steps by steps jupyter setting up
     * `clever deploy`
 
 1. You have logs from the `clever deploy` command or from the overview application page on [Clevergrid dashboard](https://dashboard.clevergrid.io/)
+
+    Find the token at the end of these logs and copy-paste it into your available jupyter application here :
+    
+       <App Id>.cleverapps.io
