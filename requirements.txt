@@ -4,3 +4,4 @@ jupyters3
 s3contents
 pgcontents
 dask
+toolz
