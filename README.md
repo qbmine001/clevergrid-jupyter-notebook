@@ -38,7 +38,8 @@ Steps by steps jupyter setting up
 
     >  **Security:** Token is automatically set up and have to be find into logs during the deployment. Nonetheless, you
     can provide your own Token or Password as environment variable :
-        Set a `TOKEN` or a `PASSWORD` environment variable. Fill this variables by empty strings to disable security. 
+        Set a `TOKEN` or a `PASSWORD` environment variable. Fill this variables by empty strings to disable security.
+        **Make sure to provide a sha1 processed PASSWORD in the environment variable !** 
 
 
 1. Create a Cellar Add-on
@@ -63,3 +64,5 @@ Steps by steps jupyter setting up
     If you have not provide a `TOKEN` or `PASSWORD` environment variable, find the automatically set token at the end of these logs and copy-paste it into your available jupyter application here :
     
        <App Id>.cleverapps.io
+       
+       example : `app-5181525d-1111-1111-1111-7cb978be2539.cleverapp`
