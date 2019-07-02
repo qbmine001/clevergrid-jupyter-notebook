@@ -11,6 +11,8 @@ CELLAR_ADDON_KEY_SECRET = os.getenv("CELLAR_ADDON_KEY_SECRET")
 BUCKET_NOTEBOOK_NAME = os.getenv("BUCKET_NOTEBOOK_NAME")
 CELLAR_ADDON_HOST = os.getenv("CELLAR_ADDON_HOST")
 
+APP_ID = os.getenv("APP_ID")
+
 c = get_config()
 
 # Tell Jupyter to use S3ContentsManager for all storage.
@@ -27,3 +29,5 @@ if PASSWORD is not None:
 
 
 c.S3ContentsManager.prefix = ""
+
+c.NotebookApp.custom_display_url = APP_ID + ".cleverapps.io"

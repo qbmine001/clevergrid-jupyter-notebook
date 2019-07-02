@@ -65,4 +65,4 @@ Steps by steps jupyter setting up
     
        <App Id>.cleverapps.io
        
-       example : `app-5181525d-1111-1111-1111-7cb978be2539.cleverapp`
+       example : `app-5181525d-1111-1111-1111-7cb978be2539.cleverapp.io`
