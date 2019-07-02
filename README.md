@@ -66,10 +66,10 @@ Steps by steps jupyter setting up
 
 1. Go to your Jupyter Application :
 
-   * By ur:
+   * With the url :
    
          <App Id>.cleverapps.io
        
          example : `app-5181525d-1111-1111-1111-7cb978be2539.cleverapp.io`
 
-   * By the command line : `clever open`
+   * using the command line : `clever open`
