@@ -39,7 +39,7 @@ Steps by steps jupyter setting up
     >  **Security:** Token is automatically set up and have to be find into logs during the deployment. Nonetheless, you
     can provide your own Token or Password as environment variable :
         Set a `TOKEN` or a `PASSWORD` environment variable. Fill this variables by empty strings to disable security.
-        **Make sure to provide a sha1 processed PASSWORD in the environment variable !** 
+        **Make sure to provide a sha1 processed PASSWORD in the environment variable !** ([More informations here](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#preparing-a-hashed-password))
 
 
 1. Create a Cellar Add-on
