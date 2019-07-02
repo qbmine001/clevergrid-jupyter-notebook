@@ -1,23 +1,23 @@
-Clevergrid : launch a jupyter server
+Clever Grid : launch a jupyter server
 ---
-We will run a jupyter notebook on a remote GPU server with the Clevergrid platform.
+We will run a jupyter notebook on a remote GPU server with the Clever Grid platform.
 
-We have to remember some concepts in Clevergrid.
+We have to remember some concepts in Clever Grid.
 
 * All applications is stateless. That means no data is kept over the life of the application
-* Add-ons are stateful. We will link a python runner application from Clevergrid to a Cellar add-on as storage
+* Add-ons are stateful. We will link a python runner application from Clever Grid to a Cellar add-on as storage
 * We provide some environment variables as configuration
 
 
 prerequisites
 ---
-* You need a Clever-cloud or a Clevergrid account
+* You need a Clever-cloud or a Clever Grid account
 
 * We will use the Clever CLI [Clever cloud CLI](https://www.clever-cloud.com/doc/clever-tools/getting_started/#installing-clever-tools)
 
 Steps by steps jupyter setting up
 ----
-1. Create an application from the [Clevergrid dashboard](https://dashboard.clevergrid.io/)
+1. Create an application from the [Clever Grid dashboard](https://dashboard.clevergrid.io/)
     * choose your organization
     * click on `Create an application`
     * set up a name and choose `Python Webapp`
@@ -29,7 +29,7 @@ Steps by steps jupyter setting up
 1. Set up your application environment variables
     * go to the  `Environment variables` tabs from your application dashboar
     * Make sure that your Webapp has `PORT` environment variable set at `8080`
-    > this is the default listening port by Clevergrid
+    > this is the default listening port by Clever Grid
     * Provide a `BUCKET_NOTEBOOK_NAME` environment variable with the name you want give to your Cellar bucket
     * Set `PYTHON_VERSION` at `3.6`
     > We want use python3.6
@@ -43,7 +43,7 @@ Steps by steps jupyter setting up
 
 
 1. Create a Cellar Add-on
-    * Go to your [Clevergrid dashboard](https://dashboard.clevergrid.io/)
+    * Go to your [Clever Grid dashboard](https://dashboard.clevergrid.io/)
     * click on `add a storage service` and choose `Cellar S3 storage`
     * select a pricing and ink it to your application
     * name it
@@ -51,18 +51,25 @@ Steps by steps jupyter setting up
 
 1. Go to this cloned git repository
     > We will now use the [Clever cloud CLI](https://www.clever-cloud.com/doc/clever-tools/getting_started/#installing-clever-tools)
-    * make sure you are login to your Clevergrid account : `clever login`
+    * make sure you are login to your Clever Grid account : `clever login`
     * link the repository to your application :
        * `clever link <Your App ID>`
-       > You can find your App Id from the application overview tab from [Clevergrid dashboard](https://dashboard.clevergrid.io/)
+       > You can find your App Id from the application overview tab from [Clever Grid dashboard](https://dashboard.clevergrid.io/)
 
 1. Deploy your application
     * `clever deploy`
 
-1. You have logs from the `clever deploy` command or from the overview application page on [Clevergrid dashboard](https://dashboard.clevergrid.io/)
+1. You have logs from the `clever deploy` command or from the overview application page on [Clever Grid dashboard](https://dashboard.clevergrid.io/)
 
-    If you have not provide a `TOKEN` or `PASSWORD` environment variable, find the automatically set token at the end of these logs and copy-paste it into your available jupyter application here :
+    If you have not provide a `TOKEN` or `PASSWORD` environment variable, find the automatically set token at the end of these logs and copy-paste it into your jupyter application
     
-       <App Id>.cleverapps.io
+
+1. Go to your Jupyter Application :
+
+   * By ur:
+   
+         <App Id>.cleverapps.io
        
-       example : `app-5181525d-1111-1111-1111-7cb978be2539.cleverapp.io`
+         example : `app-5181525d-1111-1111-1111-7cb978be2539.cleverapp.io`
+
+   * By the command line : `clever open`

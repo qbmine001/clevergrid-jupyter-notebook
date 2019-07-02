@@ -30,4 +30,4 @@ if PASSWORD is not None:
 
 c.S3ContentsManager.prefix = ""
 
-c.NotebookApp.custom_display_url = APP_ID + ".cleverapps.io"
+c.NotebookApp.custom_display_url = "app-" + APP_ID[len("app_"):] + ".cleverapps.io"
