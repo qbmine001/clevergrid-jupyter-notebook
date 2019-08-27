@@ -31,7 +31,8 @@ Steps by steps jupyter setting up
     * Make sure that your Webapp has `PORT` environment variable set at `8080`
     > this is the default listening port by Clever Grid
     * Provide a `BUCKET_NOTEBOOK_NAME` environment variable with the name you want give to your Cellar bucket. **It must
-    be unique accros all the Clever Cloud Cellar domain** *(Due to s3 specifications)*    * Set `PYTHON_VERSION` at `3.6`
+    be unique accros all the Clever Cloud Cellar domain** *(Due to s3 specifications)*    
+    * Set `PYTHON_VERSION` at `3.6`
     > We want use python3.6
     * Set the path to your starting script by setting up `CC_MLPYTHON_START_SCRIPT` environment variable to  `start.sh`
     * Make sure to click on `update changes`
