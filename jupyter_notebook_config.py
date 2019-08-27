@@ -16,7 +16,7 @@ APP_ID = os.getenv("APP_ID")
 c = get_config()
 
 # Custom base url
-c.NotebookApp.custom_display_url = "app-" + APP_ID[len("app_"):] + ".cleverapps.io"
+c.NotebookApp.custom_display_url = "http://app-" + APP_ID[len("app_"):] + ".cleverapps.io"
 
 # Tell Jupyter to use S3ContentsManager for all storage.
 c.NotebookApp.contents_manager_class = S3ContentsManager
