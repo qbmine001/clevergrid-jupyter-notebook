@@ -30,8 +30,8 @@ Steps by steps jupyter setting up
     * go to the  `Environment variables` tabs from your application dashboar
     * Make sure that your Webapp has `PORT` environment variable set at `8080`
     > this is the default listening port by Clever Grid
-    * Provide a `BUCKET_NOTEBOOK_NAME` environment variable with the name you want give to your Cellar bucket
-    * Set `PYTHON_VERSION` at `3.6`
+    * Provide a `BUCKET_NOTEBOOK_NAME` environment variable with the name you want give to your Cellar bucket. **It must
+    be unique accros all the Clever Cloud Cellar domain** *(Due to s3 specifications)*    * Set `PYTHON_VERSION` at `3.6`
     > We want use python3.6
     * Set the path to your starting script by setting up `CC_MLPYTHON_START_SCRIPT` environment variable to  `start.sh`
     * Make sure to click on `update changes`
@@ -40,7 +40,6 @@ Steps by steps jupyter setting up
     can provide your own Token or Password as environment variable :
         Set a `TOKEN` or a `PASSWORD` environment variable. Fill this variables by empty strings to disable security.
         **Make sure to provide a sha1 processed PASSWORD in the environment variable !** ([More informations here](https://jupyter-notebook.readthedocs.io/en/stable/public_server.html#preparing-a-hashed-password))
-
 
 1. Create a Cellar Add-on
     * Go to your [Clever Grid dashboard](https://dashboard.clevergrid.io/)
@@ -63,7 +62,6 @@ Steps by steps jupyter setting up
 
     If you have not provide a `TOKEN` or `PASSWORD` environment variable, find the automatically set token at the end of these logs and copy-paste it into your jupyter application
     
-
 1. Go to your Jupyter Application :
 
    * With the url :
