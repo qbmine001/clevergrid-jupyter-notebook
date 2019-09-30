@@ -61,7 +61,7 @@ Steps by steps jupyter setting up
 
 1. You have logs from the `clever deploy` command or from the overview application page on [Clever Grid dashboard](https://dashboard.clevergrid.io/)
 
-    If you have not provide a `TOKEN` or `PASSWORD` environment variable, find the automatically set token at the end of these logs and copy-paste it into your jupyter application
+    If you have not provided a `TOKEN` or `PASSWORD` environment variable, find the automatically set token at the end of these logs and copy-paste it into your jupyter application
     
 1. Go to your Jupyter Application :
 
