@@ -1,3 +1,6 @@
+# - - 
+# **WARNING : DECOMMISSIONING SERVICE - OUTDATED !**
+# - -
 Clever Grid : launch a jupyter server
 ---
 We will run a jupyter notebook on a remote GPU server with the Clever Grid platform.
