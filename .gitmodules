@@ -1,3 +1,0 @@
-[submodule "bucket-management"]
-	path = bucket-management
-	url = https://github.com/vballu/bucket-management.git
